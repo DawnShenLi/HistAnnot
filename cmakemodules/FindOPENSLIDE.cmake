@@ -6,10 +6,10 @@
 #  OPENSLIDE_FOUND, If false, do not try to use OPENSLIDE.
 
 find_path(OPENSLIDE_INCLUDE_DIR openslide.h)
-find_library(OPENSLIDE_LIBRARY NAMES openslide)
-
+find_library(OPENSLIDE_LIBRARY NAMES libopenslide)
 # handle the QUIETLY and REQUIRED arguments and set TIFF_FOUND to TRUE if
 # all listed variables are TRUE
+
 include(${CMAKE_ROOT}/Modules/FindPackageHandleStandardArgs.cmake)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(OPENSLIDE
                                   REQUIRED_VARS OPENSLIDE_LIBRARY OPENSLIDE_INCLUDE_DIR)

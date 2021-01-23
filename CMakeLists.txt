@@ -7,21 +7,42 @@ if(${CMAKE_VERSION} VERSION_GREATER "3.12.0")
 cmake_policy(SET CMP0078 OLD)
 cmake_policy(SET CMP0086 NEW)
 endif()
-project(DIAGPathology)
+project(HIST)
 
 set(CURRENT_MAJOR_VERSION 1)
 set(CURRENT_MINOR_VERSION 9)
 set(CURRENT_PATCH_VERSION 0)
-set(ASAP_VERSION ${CURRENT_MAJOR_VERSION}.${CURRENT_MINOR_VERSION}.${CURRENT_PATCH_VERSION})
+set(HIST_VERSION ${CURRENT_MAJOR_VERSION}.${CURRENT_MINOR_VERSION}.${CURRENT_PATCH_VERSION})
 
 include (GenerateExportHeader)
+
+set(THIRDPARTY_PATH "D:/Projects/Pathology/code/3rd-party")
+set(BOOST_ROOT "C:/boost_1_68_0")
+set(QT_ROOT "C:/Qt/5.11.2")
+set(OpenCV_ROOT "C:/opencv/build")
+set(VCPKG_ROOT "C:/src/vcpkg/installed")
+
+SET(CMAKE_PREFIX_PATH 
+"${THIRDPARTY_PATH}/openslide"
+"${THIRDPARTY_PATH}/unittest"
+"${THIRDPARTY_PATH}/jpeg"
+"${THIRDPARTY_PATH}/jasper"
+"${THIRDPARTY_PATH}/tiff"
+"${THIRDPARTY_PATH}/pugixml"
+"${THIRDPARTY_PATH}/zlib"
+"${THIRDPARTY_PATH}/openjpeg" 
+"${THIRDPARTY_PATH}/dcmtk"
+"${OpenCV_ROOT}/x64/vc15"
+"${QT_ROOT}/msvc2017_64"
+"${VCPKG_ROOT}/x64-windows/share"
+)
 
 configure_file(
   "${PROJECT_SOURCE_DIR}/config/ASAPMacros.h.in"
   "${PROJECT_BINARY_DIR}/config/ASAPMacros.h"
 )
 
-set(CMAKE_MODULE_PATH ${DIAGPathology_SOURCE_DIR}/cmakemodules)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmakemodules)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 if(NOT WIN32)
@@ -74,7 +95,7 @@ find_package(OPENSLIDE REQUIRED)
 
 # Build options for the pathology projects
 option(BUILD_EXECUTABLES "Builds executables" OFF)
-option(BUILD_ASAP "Builds the ASAP viewer" OFF)
+option(BUILD_HIST "Builds the HISTAnnot viewer" OFF)
 option(BUILD_IMAGEPROCESSING "Builds image processing routines" OFF)
 option(BUILD_TESTS "Builds tests" OFF)
 option(PACKAGE_ON_INSTALL "Copies dependent DLLs and packages install" OFF)
@@ -96,7 +117,7 @@ IF(BUILD_IMAGEPROCESSING)
   add_subdirectory(imgproc)
 ENDIF()
 
-IF(BUILD_ASAP)
+IF(BUILD_HIST)
   add_subdirectory(ASAP)
 ENDIF()
 
@@ -112,24 +133,24 @@ file(RELATIVE_PATH REL_INCLUDE_DIR "${INSTALL_CMAKE_DIR}" "${INSTALL_INCLUDE_DIR
 file(RELATIVE_PATH REL_BINARY_DIR  "${INSTALL_CMAKE_DIR}" "${INSTALL_BINARY_DIR}")
 file(RELATIVE_PATH REL_LIBRARY_DIR "${INSTALL_CMAKE_DIR}" "${INSTALL_LIBRARY_DIR}")
 
-configure_file(ASAPConfig.cmake.in
-               "${PROJECT_BINARY_DIR}/ASAPConfig.cmake" @ONLY)
-configure_file(ASAPConfigVersion.cmake.in
-               "${PROJECT_BINARY_DIR}/ASAPConfigVersion.cmake" @ONLY)
+configure_file(HISTConfig.cmake.in
+               "${PROJECT_BINARY_DIR}/HISTConfig.cmake" @ONLY)
+configure_file(HISTConfigVersion.cmake.in
+               "${PROJECT_BINARY_DIR}/HISTConfigVersion.cmake" @ONLY)
  
 # Install the files for version configuration
 install(FILES
-        "${PROJECT_BINARY_DIR}/ASAPConfig.cmake"
-        "${PROJECT_BINARY_DIR}/ASAPConfigVersion.cmake"
+        "${PROJECT_BINARY_DIR}/HISTConfig.cmake"
+        "${PROJECT_BINARY_DIR}/HISTConfigVersion.cmake"
         DESTINATION cmake)
  
 # Install the export set for use with the install-tree
 install(EXPORT asap-targets DESTINATION cmake)
 
 if(PACKAGE_ON_INSTALL)
-  set(CPACK_PACKAGE_NAME "ASAP")
+  set(CPACK_PACKAGE_NAME "HISTAnnot")
   set(CPACK_PACKAGE_VENDOR "Diagnostic Image Analysis Group")
-  set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "ASAP - Automated Slide Analysis Platform")
+  set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "HISTAnnot - Automated Slide Analysis Platform")
   set(CPACK_PACKAGE_DESCRIPTION "This package provides viewing and analysis tools for whole slide images.")
   set(CPACK_PACKAGE_VERSION "${CURRENT_MAJOR_VERSION}.${CURRENT_MINOR_VERSION}")
   set(CPACK_PACKAGE_VERSION_MAJOR ${CURRENT_MAJOR_VERSION})
@@ -137,15 +158,15 @@ if(PACKAGE_ON_INSTALL)
   set(CPACK_PACKAGE_VERSION_PATCH ${CURRENT_PATCH_VERSION})
 if(WIN32)
   set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
-  set(CPACK_NSIS_DISPLAY_NAME "ASAP ${CPACK_PACKAGE_VERSION}")
-  set(CPACK_PACKAGE_EXECUTABLES asap "ASAP")
-  set(CPACK_NSIS_MUI_ICON ${DIAGPathology_SOURCE_DIR}/ASAP/application.ico)
-  set(CPACK_NSIS_MUI_UNIICON ${DIAGPathology_SOURCE_DIR}/ASAP/application.ico)
+  set(CPACK_NSIS_DISPLAY_NAME "HISTAnnot ${CPACK_PACKAGE_VERSION}")
+  set(CPACK_PACKAGE_EXECUTABLES histannot "HISTAnnot")
+  set(CPACK_NSIS_MUI_ICON ${PROJECT_SOURCE_DIR}/ASAP/application.ico)
+  set(CPACK_NSIS_MUI_UNIICON ${PROJECT_SOURCE_DIR}/ASAP/application.ico)
 else(WIN32)
   set(CPACK_GENERATOR "DEB")
   set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Geert Litjens") 
   set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-  set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "ASAP - Automated Slide Analysis Platform")
+  set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "HISTAnnot - Automated Slide Analysis Platform")
   set(CPACK_PACKAGING_INSTALL_PREFIX /opt/ASAP)
 endif(WIN32)
 include(CPack)

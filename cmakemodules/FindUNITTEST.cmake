@@ -8,8 +8,8 @@
 #  UNITTEST_LIBRARY, where to find the UNITTEST library.
 
 find_path(UNITTEST_INCLUDE_DIR UnitTest++.h)
-find_library(UNITTEST_LIBRARY NAMES UNITTEST)
-find_library(UNITTEST_LIBRARY_DEBUG NAMES UNITTEST)
+find_library(UNITTEST_LIBRARY NAMES UnitTest++)
+find_library(UNITTEST_LIBRARY_DEBUG NAMES UnitTest++d)
 
 # handle the QUIETLY and REQUIRED arguments and set TIFF_FOUND to TRUE if
 # all listed variables are TRUE
