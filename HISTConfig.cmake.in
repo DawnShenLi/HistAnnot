@@ -1,0 +1,26 @@
+# - Config file for the PROJECT package
+# It defines the following variables
+#  PROJECT_INCLUDE_DIRS - include directories
+#  PROJECT_LIBRARIES    - libraries to link against
+ 
+# Compute paths
+get_filename_component(PROJECT_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+set(PROJECT_INCLUDE_DIR "${PROJECT_CMAKE_DIR}/@REL_INCLUDE_DIR@")
+
+set(PROJECT_INCLUDE_DIRS
+${PROJECT_INCLUDE_DIR}
+${PROJECT_INCLUDE_DIR}/core
+${PROJECT_INCLUDE_DIR}/multiresolutionimageinterface
+${PROJECT_INCLUDE_DIR}/annotation
+${PROJECT_INCLUDE_DIR}/ASAP
+${PROJECT_INCLUDE_DIR}/imgproc
+${PROJECT_INCLUDE_DIR}/ASAP/plugins/workstationextension
+)
+
+set(PROJECT_BINARY_DIR "${PROJECT_CMAKE_DIR}/@REL_BINARY_DIR@")
+set(PROJECT_LIBRARY_DIR "${PROJECT_CMAKE_DIR}/@REL_LIBRARY_DIR@")
+ 
+# Our library dependencies (contains definitions for IMPORTED targets)
+if(NOT TARGET PROJECT)
+  include("${PROJECT_CMAKE_DIR}/PROJECT-targets.cmake")
+endif()

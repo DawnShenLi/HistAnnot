@@ -1,0 +1,57 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug (default)",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "BUILD_EXECUTABLES",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "BUILD_ASAP",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "BUILD_IMAGEPROCESSING",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "BUILD_MULTIRESOLUTIONIMAGEINTERFACE_VSI_SUPPORT",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "BUILD_TESTS",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "OpenCV_DIR",
+          "value": "C:/opencv/build",
+          "type": "PATH"
+        },
+        {
+          "name": "BUILD_WORKLIST_INTERFACE",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "BUILD_WORKLIST_GRANDCHALLENGE_INTERFACE",
+          "value": "True",
+          "type": "BOOL"
+        }
+      ]
+    }
+  ]
+}
