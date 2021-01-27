@@ -1,0 +1,77 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"ASAP/annotation/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "multiresolutionimageinterface::@43e30ab7b55c91f41080"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "annotation::@e4d72e45107a805b2d0d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ASAPLib::@a243750b205c685f07fd"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "ASAP/plugins/workstationextensions"
+	},
+	"id" : "AnnotationPlugin_autogen::@2b09fb285924410ba3ec",
+	"isGeneratorProvided" : true,
+	"name" : "AnnotationPlugin_autogen",
+	"paths" : 
+	{
+		"build" : "ASAP/annotation",
+		"source" : "ASAP/annotation"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/annotation/CMakeFiles/AnnotationPlugin_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/annotation/CMakeFiles/AnnotationPlugin_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

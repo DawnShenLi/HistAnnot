@@ -1,0 +1,69 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"ASAP/basictools/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "ASAPLib::@a243750b205c685f07fd"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "ASAP/plugins/tools"
+	},
+	"id" : "ZoomToolPlugin_autogen::@700a030bf045a4ae922a",
+	"isGeneratorProvided" : true,
+	"name" : "ZoomToolPlugin_autogen",
+	"paths" : 
+	{
+		"build" : "ASAP/basictools",
+		"source" : "ASAP/basictools"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/basictools/CMakeFiles/ZoomToolPlugin_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/basictools/CMakeFiles/ZoomToolPlugin_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

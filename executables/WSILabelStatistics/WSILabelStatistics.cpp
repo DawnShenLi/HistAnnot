@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
         .positional(positionalOptions).run(),
         vm);
       if (!vm.count("input")) {
-        cout << "WSILabelStatistics v" << ASAP_VERSION_STRING << endl;
+        cout << "WSILabelStatistics v" << HIST_VERSION_STRING << endl;
         cout << "Usage: WSILabelStatistics.exe input output [options]" << endl;
       }
       if (vm.count("help")) {

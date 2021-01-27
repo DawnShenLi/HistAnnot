@@ -71,7 +71,7 @@ import_array();
 
 %ignore swap(ImageSource& first, ImageSource& second);
 
-%immutable ASAP_VERSION_STRING;
+%immutable HIST_VERSION_STRING;
 %include "../config/ASAPMacros.h"
 
 %include "../core/Point.h"

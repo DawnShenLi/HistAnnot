@@ -1,0 +1,73 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"ASAP/filters/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "basicfilters::@4a094295c42b5c0b4e06"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ASAPLib::@a243750b205c685f07fd"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "ASAP/plugins/filters"
+	},
+	"id" : "ColorDeconvolutionFilterPlugin_autogen::@c607f78870dec13926b0",
+	"isGeneratorProvided" : true,
+	"name" : "ColorDeconvolutionFilterPlugin_autogen",
+	"paths" : 
+	{
+		"build" : "ASAP/filters",
+		"source" : "ASAP/filters"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/filters/CMakeFiles/ColorDeconvolutionFilterPlugin_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/filters/CMakeFiles/ColorDeconvolutionFilterPlugin_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

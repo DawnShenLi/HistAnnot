@@ -1,0 +1,77 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"ASAP/worklist_interface/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "multiresolutionimageinterface::@43e30ab7b55c91f41080"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "core::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ASAPLib::@a243750b205c685f07fd"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "ASAP"
+	},
+	"id" : "ASAP_browser_autogen::@550e97d4972fcf136386",
+	"isGeneratorProvided" : true,
+	"name" : "ASAP_browser_autogen",
+	"paths" : 
+	{
+		"build" : "ASAP/worklist_interface",
+		"source" : "ASAP/worklist_interface"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/worklist_interface/CMakeFiles/ASAP_browser_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/worklist_interface/CMakeFiles/ASAP_browser_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -7,7 +7,7 @@ if(${CMAKE_VERSION} VERSION_GREATER "3.12.0")
 cmake_policy(SET CMP0078 OLD)
 cmake_policy(SET CMP0086 NEW)
 endif()
-project(HIST)
+project(HistAnnot)
 
 set(CURRENT_MAJOR_VERSION 1)
 set(CURRENT_MINOR_VERSION 9)
@@ -19,7 +19,7 @@ include (GenerateExportHeader)
 set(THIRDPARTY_PATH "D:/Projects/Pathology/code/3rd-party")
 set(BOOST_ROOT "C:/boost_1_68_0")
 set(QT_ROOT "C:/Qt/5.11.2")
-set(OpenCV_ROOT "C:/opencv/build")
+set(OpenCV_DIR "C:/opencv/build")
 set(VCPKG_ROOT "C:/src/vcpkg/installed")
 
 SET(CMAKE_PREFIX_PATH 
@@ -32,9 +32,8 @@ SET(CMAKE_PREFIX_PATH
 "${THIRDPARTY_PATH}/zlib"
 "${THIRDPARTY_PATH}/openjpeg" 
 "${THIRDPARTY_PATH}/dcmtk"
-"${OpenCV_ROOT}/x64/vc15"
+"${OpenCV_DIR}/x64/vc15"
 "${QT_ROOT}/msvc2017_64"
-"${VCPKG_ROOT}/x64-windows/share"
 )
 
 configure_file(
@@ -68,6 +67,7 @@ SET(Boost_USE_STATIC_LIBS OFF)
 
 # OpenJPEG for JPEG2000 codec
 find_package(OpenJPEG REQUIRED)
+message(STATUS "Found OpenJPEG: ${OPENJPEG_INCLUDE_DIRS}")
 
 # TIFF is the main multi-tiled format used in this package
 find_package(TIFF REQUIRED)
@@ -90,15 +90,19 @@ SET_PROPERTY(TARGET libjpeg PROPERTY IMPORTED_LOCATION ${JPEG_LIBRARY})
 add_library(zlib STATIC IMPORTED)
 SET_PROPERTY(TARGET zlib PROPERTY IMPORTED_LOCATION ${ZLIB_LIBRARY})
 
+add_library(openjp2 STATIC IMPORTED)
+SET_PROPERTY(TARGET openjp2 PROPERTY IMPORTED_LOCATION ${OPENJPEG_LIBRARY})
+
+
 # Required for additional format support
 find_package(OPENSLIDE REQUIRED)
 
 # Build options for the pathology projects
-option(BUILD_EXECUTABLES "Builds executables" OFF)
-option(BUILD_HIST "Builds the HISTAnnot viewer" OFF)
-option(BUILD_IMAGEPROCESSING "Builds image processing routines" OFF)
-option(BUILD_TESTS "Builds tests" OFF)
-option(PACKAGE_ON_INSTALL "Copies dependent DLLs and packages install" OFF)
+option(BUILD_EXECUTABLES "Builds executables" ON)
+option(BUILD_HIST "Builds the HistAnnot viewer" ON)
+option(BUILD_IMAGEPROCESSING "Builds image processing routines" ON)
+option(BUILD_TESTS "Builds tests" ON)
+option(PACKAGE_ON_INSTALL "Copies dependent DLLs and packages install" ON)
 
 if(BUILD_IMAGEPROCESSING)
   set(OpenCV_STATIC OFF)
@@ -148,9 +152,9 @@ install(FILES
 install(EXPORT asap-targets DESTINATION cmake)
 
 if(PACKAGE_ON_INSTALL)
-  set(CPACK_PACKAGE_NAME "HISTAnnot")
+  set(CPACK_PACKAGE_NAME "HistAnnot")
   set(CPACK_PACKAGE_VENDOR "Diagnostic Image Analysis Group")
-  set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "HISTAnnot - Automated Slide Analysis Platform")
+  set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "HistAnnot - Automated Slide Analysis Platform")
   set(CPACK_PACKAGE_DESCRIPTION "This package provides viewing and analysis tools for whole slide images.")
   set(CPACK_PACKAGE_VERSION "${CURRENT_MAJOR_VERSION}.${CURRENT_MINOR_VERSION}")
   set(CPACK_PACKAGE_VERSION_MAJOR ${CURRENT_MAJOR_VERSION})
@@ -158,15 +162,15 @@ if(PACKAGE_ON_INSTALL)
   set(CPACK_PACKAGE_VERSION_PATCH ${CURRENT_PATCH_VERSION})
 if(WIN32)
   set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
-  set(CPACK_NSIS_DISPLAY_NAME "HISTAnnot ${CPACK_PACKAGE_VERSION}")
-  set(CPACK_PACKAGE_EXECUTABLES histannot "HISTAnnot")
+  set(CPACK_NSIS_DISPLAY_NAME "HistAnnot ${CPACK_PACKAGE_VERSION}")
+  set(CPACK_PACKAGE_EXECUTABLES HistAnnot "HistAnnot")
   set(CPACK_NSIS_MUI_ICON ${PROJECT_SOURCE_DIR}/ASAP/application.ico)
   set(CPACK_NSIS_MUI_UNIICON ${PROJECT_SOURCE_DIR}/ASAP/application.ico)
 else(WIN32)
   set(CPACK_GENERATOR "DEB")
   set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Geert Litjens") 
   set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-  set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "HISTAnnot - Automated Slide Analysis Platform")
+  set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "HistAnnot - Automated Slide Analysis Platform")
   set(CPACK_PACKAGING_INSTALL_PREFIX /opt/ASAP)
 endif(WIN32)
 include(CPack)

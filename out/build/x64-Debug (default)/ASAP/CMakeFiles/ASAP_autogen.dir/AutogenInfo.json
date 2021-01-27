@@ -1,0 +1,70 @@
+{
+	"BUILD_DIR" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/ASAP_autogen",
+	"CMAKE_BINARY_DIR" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/Projects/Pathology/code/HistAnnot/ASAP",
+	"CMAKE_EXECUTABLE" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
+	"CMAKE_SOURCE_DIR" : "D:/Projects/Pathology/code/HistAnnot",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/ASAP_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/ASAP_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB", "WIN32" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/Projects/Pathology/code/HistAnnot/ASAP",
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP",
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/imgproc/basicfilters",
+		"D:/Projects/Pathology/code/HistAnnot",
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)",
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/core",
+		"C:/boost_1_68_0",
+		"C:/Qt/5.11.2/msvc2017_64/include",
+		"C:/Qt/5.11.2/msvc2017_64/include/QtCore",
+		"C:/Qt/5.11.2/msvc2017_64/mkspecs/win32-msvc",
+		"C:/Qt/5.11.2/msvc2017_64/include/QtWidgets",
+		"C:/Qt/5.11.2/msvc2017_64/include/QtGui",
+		"C:/Qt/5.11.2/msvc2017_64/include/QtANGLE"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/ASAPLib_autogen/mocs_compilation.cpp",
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/qrc_ASAP_resources.cpp"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 10,
+	"PARSE_CACHE_FILE" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/CMakeFiles/ASAP_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/5.11.2/msvc2017_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/5.11.2/msvc2017_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/CMakeFiles/ASAP_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "D:/Projects/Pathology/code/HistAnnot/ASAP/main.cpp", "MU" ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : 
+	[
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/ASAPLib_autogen/mocs_compilation.cpp",
+		"D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/qrc_ASAP_resources.cpp"
+	],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

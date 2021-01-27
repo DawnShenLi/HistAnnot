@@ -32,7 +32,7 @@ add_library(ColorDeconvolutionFilterPlugin SHARED ${ColorDeconvolutionPlugin_SOU
 add_library(FilterWorkstationExtensionPlugin SHARED ${FilterWorkstationExtensionPlugin_SOURCE} ${FILTERWORKSTATIONEXTENSIONPLUGIN_RESOURCE})
 
 if(BUILD_IMAGEPROCESSING)
-	target_link_libraries(NucleiDetectionFilterPlugin PRIVATE ${OpenCV_LIBS} ASAPLib FRST basicfilters Qt5::Core Qt5::Widgets Qt5::UiTools)
+	target_link_libraries(NucleiDetectionFilterPlugin PRIVATE ${OpenCV_LIBRARIES} ASAPLib FRST basicfilters Qt5::Core Qt5::Widgets Qt5::UiTools)
     set_target_properties(NucleiDetectionFilterPlugin PROPERTIES DEBUG_POSTFIX _d)
 	install(TARGETS  NucleiDetectionFilterPlugin
 	  RUNTIME DESTINATION bin/plugins/filters

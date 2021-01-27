@@ -1,0 +1,461 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "multiresolutionimageinterface/multiresolutionimageinterface_d.dll"
+		},
+		{
+			"path" : "multiresolutionimageinterface/multiresolutionimageinterface_d.lib"
+		},
+		{
+			"path" : "multiresolutionimageinterface/multiresolutionimageinterface_d.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_library",
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"multiresolutionimageinterface/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 501,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 152,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 77,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   /D\"_SCL_SECURE_NO_WARNINGS\" /D\"_CRT_SECURE_NO_WARNINGS\" /wd4251"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "HAS_MULTIRESOLUTIONIMAGEINTERFACE_VSI_SUPPORT"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "PUGIXML_HEADER_ONLY"
+				},
+				{
+					"define" : "multiresolutionimageinterface_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "D:/Projects/Pathology/code/HistAnnot"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/multiresolutionimageinterface"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/Projects/Pathology/code/3rd-party/pugixml/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/Projects/Pathology/code/3rd-party/tiff/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/Projects/Pathology/code/3rd-party/dcmtk/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/core"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "C:/boost_1_68_0"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "jpeg2kcodec::@43e30ab7b55c91f41080"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "core::@57760688d1f824db5d9c"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "multiresolutionimageinterface"
+	},
+	"id" : "multiresolutionimageinterface::@43e30ab7b55c91f41080",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "D:/Projects/Pathology/code/HistAnnot/out/install/x64-Debug (default)"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\core\\core_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "optimized;D:\\Projects\\Pathology\\code\\3rd-party\\tiff\\lib\\tiff.lib;debug;D:\\Projects\\Pathology\\code\\3rd-party\\tiff\\lib\\tiffd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "C:\\boost_1_68_0\\lib64-msvc-14.1\\boost_thread-vc141-mt-gd-x64-1_68.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "jpeg2kcodec_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "legacy_stdio_definitions.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "D:\\Projects\\Pathology\\code\\3rd-party\\dcmtk\\lib\\ijg8.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "C:\\boost_1_68_0\\lib64-msvc-14.1\\boost_chrono-vc141-mt-gd-x64-1_68.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "C:\\boost_1_68_0\\lib64-msvc-14.1\\boost_system-vc141-mt-gd-x64-1_68.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "C:\\boost_1_68_0\\lib64-msvc-14.1\\boost_date_time-vc141-mt-gd-x64-1_68.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "C:\\boost_1_68_0\\lib64-msvc-14.1\\boost_atomic-vc141-mt-gd-x64-1_68.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "multiresolutionimageinterface",
+	"nameOnDisk" : "multiresolutionimageinterface_d.dll",
+	"paths" : 
+	{
+		"build" : "multiresolutionimageinterface",
+		"source" : "multiresolutionimageinterface"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/MultiResolutionImageReader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/MultiResolutionImageWriter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/AperioSVSWriter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/TIFFImage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/MultiResolutionImage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/MultiResolutionImageFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/TIFFImageFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/TileCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/LIFImage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/LIFImageFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/VSIImage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/VSIImageFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/MultiResolutionImageReader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/MultiResolutionImageWriter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/AperioSVSWriter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/TIFFImage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/TIFFImageFactory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/MultiResolutionImage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/MultiResolutionImageFactory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/TileCache.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/LIFImage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/LIFImageFactory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/VSIImage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/VSIImageFactory.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

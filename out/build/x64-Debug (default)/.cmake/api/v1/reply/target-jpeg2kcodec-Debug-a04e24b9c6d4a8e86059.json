@@ -1,0 +1,205 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "multiresolutionimageinterface/jpeg2kcodec_d.dll"
+		},
+		{
+			"path" : "multiresolutionimageinterface/jpeg2kcodec_d.lib"
+		},
+		{
+			"path" : "multiresolutionimageinterface/jpeg2kcodec_d.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_library",
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"multiresolutionimageinterface/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 501,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 159,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   /D\"_SCL_SECURE_NO_WARNINGS\" /D\"_CRT_SECURE_NO_WARNINGS\" /wd4251"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "NOMINMAX"
+				},
+				{
+					"define" : "jpeg2kcodec_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/multiresolutionimageinterface"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Projects/Pathology/code/HistAnnot"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/core"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/multiresolutionimageinterface"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Projects/Pathology/code/3rd-party/openjpeg/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"folder" : 
+	{
+		"name" : "multiresolutionimageinterface"
+	},
+	"id" : "jpeg2kcodec::@43e30ab7b55c91f41080",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "D:/Projects/Pathology/code/HistAnnot/out/install/x64-Debug (default)"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "D:\\Projects\\Pathology\\code\\3rd-party\\openjpeg\\lib\\openjp2.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "jpeg2kcodec",
+	"nameOnDisk" : "jpeg2kcodec_d.dll",
+	"paths" : 
+	{
+		"build" : "multiresolutionimageinterface",
+		"source" : "multiresolutionimageinterface"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"path" : "multiresolutionimageinterface/JPEG2000Codec.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "multiresolutionimageinterface/JPEG2000Codec.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

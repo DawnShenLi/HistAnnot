@@ -24,10 +24,10 @@ if(BUILD_IMAGEPROCESSING)
 endif()
 
 add_executable(testRunner ${unittest_src})
-target_include_directories(testRunner PRIVATE ${UTPP_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(testRunner PRIVATE ${UNITTEST_INCLUDE_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(testRunner PRIVATE UnitTest++ multiresolutionimageinterface)
 if(BUILD_IMAGEPROCESSING)
-  target_link_libraries(testRunner PRIVATE basicfilters FRST ${OpenCV_LIBS})
+  target_link_libraries(testRunner PRIVATE basicfilters FRST ${OpenCV_LIBRARIES})
 endif()
 
 # set target properties

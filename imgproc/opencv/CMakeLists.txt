@@ -5,8 +5,8 @@ set(OPENCVFILTERS_SRCS
 )
 
 add_library(opencvfilters SHARED ${OPENCVFILTERS_SRCS})
-target_include_directories(opencvfilters PUBLIC ${OpenCV_INCLUDE_DIRS} $<BUILD_INTERFACE:${DIAGPathology_SOURCE_DIR}> $<INSTALL_INTERFACE:include>)
-target_link_libraries(opencvfilters PUBLIC core ${OpenCV_LIBS})
+target_include_directories(opencvfilters PUBLIC ${OpenCV_INCLUDE_DIRS} $<BUILD_INTERFACE:${HistAnnot_SOURCE_DIR}> $<INSTALL_INTERFACE:include>)
+target_link_libraries(opencvfilters PUBLIC core ${OpenCV_LIBRARIES})
 
 if(WIN32)  
   set_target_properties(opencvfilters PROPERTIES FOLDER imgproc)

@@ -14,8 +14,8 @@ set(WHOLESLIDEFILTERS_SRCS
 )
 
 add_library(wholeslidefilters SHARED ${WHOLESLIDEFILTERS_SRCS})
-target_link_libraries(wholeslidefilters PRIVATE ${OpenCV_LIBS} annotation FRST basicfilters multiresolutionimageinterface)
-target_include_directories(wholeslidefilters PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}> $<INSTALL_INTERFACE:include/imgproc/wholeslidefilters>)
+target_link_libraries(wholeslidefilters PRIVATE ${OpenCV_LIBRARIES} annotation FRST basicfilters multiresolutionimageinterface)
+target_include_directories(wholeslidefilters PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}> $<INSTALL_INTERFACE:include/imgproc/wholeslidefilters> ${OpenCV_INCLUDE_DIRS})
 generate_export_header(wholeslidefilters)
 
 set_target_properties(wholeslidefilters PROPERTIES DEBUG_POSTFIX _d)

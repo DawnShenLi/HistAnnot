@@ -2,7 +2,7 @@ set(FRST_SRCS FRST.h FRST.cpp)
 
 add_library(FRST SHARED ${FRST_SRCS})
 target_include_directories(FRST PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}> $<INSTALL_INTERFACE:include/imgproc/FRST> PRIVATE ${OpenCV_INCLUDE_DIRS})
-target_link_libraries(FRST PRIVATE ${OpenCV_LIBS})
+target_link_libraries(FRST PRIVATE ${OpenCV_LIBRARIES})
 generate_export_header(FRST)
 set_target_properties(FRST PROPERTIES DEBUG_POSTFIX _d)
 

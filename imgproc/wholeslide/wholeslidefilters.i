@@ -53,7 +53,7 @@ namespace std {
 #define CORE_EXPORT
 #endif
 
-%immutable ASAP_VERSION_STRING;
+%immutable HIST_VERSION_STRING;
 %include "../../config/ASAPMacros.h"
 
 %include "DistanceTransformWholeSlideFilter.h"

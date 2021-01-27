@@ -1,4 +1,4 @@
-#include "UnitTest++/UnitTest++.h"
+#include "UnitTest++.h"
 #include "FRST.h"
 #include "TestData.h"
 #ifdef WIN32

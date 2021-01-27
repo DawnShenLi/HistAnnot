@@ -1,0 +1,757 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						12,
+						17,
+						23
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "core",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "core",
+					"targetIndexes" : 
+					[
+						29
+					]
+				},
+				{
+					"build" : "multiresolutionimageinterface",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "multiresolutionimageinterface",
+					"targetIndexes" : 
+					[
+						30,
+						31,
+						33
+					]
+				},
+				{
+					"build" : "annotation",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "annotation",
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"build" : "executables",
+					"childIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "executables"
+				},
+				{
+					"build" : "executables/MultiResImageConverter",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "executables/MultiResImageConverter",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "executables/WSIConnectedComponents",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "executables/WSIConnectedComponents",
+					"targetIndexes" : 
+					[
+						21
+					]
+				},
+				{
+					"build" : "executables/WSIDistanceTransform",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "executables/WSIDistanceTransform",
+					"targetIndexes" : 
+					[
+						22
+					]
+				},
+				{
+					"build" : "executables/WSILabelStatistics",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "executables/WSILabelStatistics",
+					"targetIndexes" : 
+					[
+						23
+					]
+				},
+				{
+					"build" : "executables/WSIThreshold",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "executables/WSIThreshold",
+					"targetIndexes" : 
+					[
+						24
+					]
+				},
+				{
+					"build" : "executables/WSIArithmetic",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "executables/WSIArithmetic",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "executables/TestRunner",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "executables/TestRunner",
+					"targetIndexes" : 
+					[
+						34
+					]
+				},
+				{
+					"build" : "imgproc",
+					"childIndexes" : 
+					[
+						13,
+						14,
+						15,
+						16
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "imgproc"
+				},
+				{
+					"build" : "imgproc/basicfilters",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "imgproc/basicfilters",
+					"targetIndexes" : 
+					[
+						28
+					]
+				},
+				{
+					"build" : "imgproc/opencv",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "imgproc/opencv",
+					"targetIndexes" : 
+					[
+						32
+					]
+				},
+				{
+					"build" : "imgproc/FRST",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "imgproc/FRST",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "imgproc/wholeslide",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "imgproc/wholeslide",
+					"targetIndexes" : 
+					[
+						35
+					]
+				},
+				{
+					"build" : "ASAP",
+					"childIndexes" : 
+					[
+						18,
+						19,
+						20,
+						21,
+						22
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ASAP",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "ASAP/annotation",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 0,
+					"source" : "ASAP/annotation",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"build" : "ASAP/visualization",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 0,
+					"source" : "ASAP/visualization",
+					"targetIndexes" : 
+					[
+						18,
+						19
+					]
+				},
+				{
+					"build" : "ASAP/filters",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 0,
+					"source" : "ASAP/filters",
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						11,
+						12,
+						14,
+						15
+					]
+				},
+				{
+					"build" : "ASAP/basictools",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 0,
+					"source" : "ASAP/basictools",
+					"targetIndexes" : 
+					[
+						16,
+						17,
+						25,
+						26
+					]
+				},
+				{
+					"build" : "ASAP/worklist_interface",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 1,
+					"source" : "ASAP/worklist_interface",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "buildtools",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "buildtools"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						23
+					],
+					"name" : "HistAnnot",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						22
+					],
+					"name" : "WorklistInterface",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 17,
+					"id" : "ASAP::@a243750b205c685f07fd",
+					"jsonFile" : "target-ASAP-Debug-4ecb54520d3d8783d180.json",
+					"name" : "ASAP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "ASAPLib::@a243750b205c685f07fd",
+					"jsonFile" : "target-ASAPLib-Debug-18b21085712297f860dc.json",
+					"name" : "ASAPLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "ASAPLib_autogen::@a243750b205c685f07fd",
+					"jsonFile" : "target-ASAPLib_autogen-Debug-a4fe76f097686a2ec7b1.json",
+					"name" : "ASAPLib_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "ASAP_autogen::@a243750b205c685f07fd",
+					"jsonFile" : "target-ASAP_autogen-Debug-4067c88812432fd0c506.json",
+					"name" : "ASAP_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "ASAP_browser::@550e97d4972fcf136386",
+					"jsonFile" : "target-ASAP_browser-Debug-936251fa001b03bac7df.json",
+					"name" : "ASAP_browser",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "ASAP_browser_autogen::@550e97d4972fcf136386",
+					"jsonFile" : "target-ASAP_browser_autogen-Debug-241609ae51f59a234d86.json",
+					"name" : "ASAP_browser_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "AnnotationPlugin::@2b09fb285924410ba3ec",
+					"jsonFile" : "target-AnnotationPlugin-Debug-ed0559b48ded084922c4.json",
+					"name" : "AnnotationPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "AnnotationPlugin_autogen::@2b09fb285924410ba3ec",
+					"jsonFile" : "target-AnnotationPlugin_autogen-Debug-971eb93a4984eb9a9a22.json",
+					"name" : "AnnotationPlugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "ColorDeconvolutionFilterPlugin::@c607f78870dec13926b0",
+					"jsonFile" : "target-ColorDeconvolutionFilterPlugin-Debug-e7382afe37e1fa499c31.json",
+					"name" : "ColorDeconvolutionFilterPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "ColorDeconvolutionFilterPlugin_autogen::@c607f78870dec13926b0",
+					"jsonFile" : "target-ColorDeconvolutionFilterPlugin_autogen-Debug-fcfd5cf7aa4e4c6024cb.json",
+					"name" : "ColorDeconvolutionFilterPlugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "FRST::@0ab6e57befae8ddb0c4f",
+					"jsonFile" : "target-FRST-Debug-6be9e3ae62b096eb82a6.json",
+					"name" : "FRST",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "FilterWorkstationExtensionPlugin::@c607f78870dec13926b0",
+					"jsonFile" : "target-FilterWorkstationExtensionPlugin-Debug-e2849bd5200837ba2d61.json",
+					"name" : "FilterWorkstationExtensionPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "FilterWorkstationExtensionPlugin_autogen::@c607f78870dec13926b0",
+					"jsonFile" : "target-FilterWorkstationExtensionPlugin_autogen-Debug-23e3955d89b9c7d0d5ec.json",
+					"name" : "FilterWorkstationExtensionPlugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "MultiResImageConverter::@43c5046e24278a4a2256",
+					"jsonFile" : "target-MultiResImageConverter-Debug-3cc21a4cfc5fe8c0b415.json",
+					"name" : "MultiResImageConverter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "NucleiDetectionFilterPlugin::@c607f78870dec13926b0",
+					"jsonFile" : "target-NucleiDetectionFilterPlugin-Debug-adb82dbcdbed32a102be.json",
+					"name" : "NucleiDetectionFilterPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "NucleiDetectionFilterPlugin_autogen::@c607f78870dec13926b0",
+					"jsonFile" : "target-NucleiDetectionFilterPlugin_autogen-Debug-689bf9132a6be1b77a81.json",
+					"name" : "NucleiDetectionFilterPlugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "PanToolPlugin::@700a030bf045a4ae922a",
+					"jsonFile" : "target-PanToolPlugin-Debug-796969d4e80c935990e8.json",
+					"name" : "PanToolPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "PanToolPlugin_autogen::@700a030bf045a4ae922a",
+					"jsonFile" : "target-PanToolPlugin_autogen-Debug-d105cb2fff16dc7cfeb0.json",
+					"name" : "PanToolPlugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "VisualizationWorkstationExtensionPlugin::@8c66331edc3443ab5b34",
+					"jsonFile" : "target-VisualizationWorkstationExtensionPlugin-Debug-3ead1885b802e0a61ecf.json",
+					"name" : "VisualizationWorkstationExtensionPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "VisualizationWorkstationExtensionPlugin_autogen::@8c66331edc3443ab5b34",
+					"jsonFile" : "target-VisualizationWorkstationExtensionPlugin_autogen-Debug-f711bf66edb8a22e8b3a.json",
+					"name" : "VisualizationWorkstationExtensionPlugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "WSIArithmetic::@51b9eaacf2ac6b9786f6",
+					"jsonFile" : "target-WSIArithmetic-Debug-9e6561ac7ad64dbc5dd2.json",
+					"name" : "WSIArithmetic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "WSIConnectedComponents::@6c732d3e8f952fa61108",
+					"jsonFile" : "target-WSIConnectedComponents-Debug-c65f152c101d04be2a66.json",
+					"name" : "WSIConnectedComponents",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "WSIDistanceTransform::@caf79e31ba1ff5c5b76c",
+					"jsonFile" : "target-WSIDistanceTransform-Debug-a8caba86daab6ed3855c.json",
+					"name" : "WSIDistanceTransform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "WSILabelStatistics::@e357e266050701f1a63e",
+					"jsonFile" : "target-WSILabelStatistics-Debug-c96fbb692cb6212aa41d.json",
+					"name" : "WSILabelStatistics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "WSIThreshold::@d40653c5e0455453a480",
+					"jsonFile" : "target-WSIThreshold-Debug-c2a3f42a26b0596617ed.json",
+					"name" : "WSIThreshold",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "ZoomToolPlugin::@700a030bf045a4ae922a",
+					"jsonFile" : "target-ZoomToolPlugin-Debug-15776656bb95db74e709.json",
+					"name" : "ZoomToolPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "ZoomToolPlugin_autogen::@700a030bf045a4ae922a",
+					"jsonFile" : "target-ZoomToolPlugin_autogen-Debug-a9696233a8fa71f961db.json",
+					"name" : "ZoomToolPlugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "annotation::@e4d72e45107a805b2d0d",
+					"jsonFile" : "target-annotation-Debug-ba6d2a0ec3cb7899beb5.json",
+					"name" : "annotation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "basicfilters::@4a094295c42b5c0b4e06",
+					"jsonFile" : "target-basicfilters-Debug-8814217262f9334b6841.json",
+					"name" : "basicfilters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "core::@57760688d1f824db5d9c",
+					"jsonFile" : "target-core-Debug-c6eccc90accdf7e22f90.json",
+					"name" : "core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "jpeg2kcodec::@43e30ab7b55c91f41080",
+					"jsonFile" : "target-jpeg2kcodec-Debug-a04e24b9c6d4a8e86059.json",
+					"name" : "jpeg2kcodec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "multiresolutionimageinterface::@43e30ab7b55c91f41080",
+					"jsonFile" : "target-multiresolutionimageinterface-Debug-d9344e47f63b7212d04c.json",
+					"name" : "multiresolutionimageinterface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "opencvfilters::@08da5009756628dcdb8d",
+					"jsonFile" : "target-opencvfilters-Debug-580c61f98f891b9a7120.json",
+					"name" : "opencvfilters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "openslidefileformat::@43e30ab7b55c91f41080",
+					"jsonFile" : "target-openslidefileformat-Debug-19864d01315188cf3173.json",
+					"name" : "openslidefileformat",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "testRunner::@160ebf687f96f753426a",
+					"jsonFile" : "target-testRunner-Debug-702c35040a69a4513890.json",
+					"name" : "testRunner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "wholeslidefilters::@3d36d8fbd3319cad8aca",
+					"jsonFile" : "target-wholeslidefilters-Debug-93b34c5a79ccb45070ad.json",
+					"name" : "wholeslidefilters",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)",
+		"source" : "D:/Projects/Pathology/code/HistAnnot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

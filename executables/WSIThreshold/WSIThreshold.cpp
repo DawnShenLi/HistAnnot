@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
         .positional(positionalOptions).run(),
         vm);
       if (!vm.count("input")) {
-        cout << "WSIThreshold v" << ASAP_VERSION_STRING << endl;
+        cout << "WSIThreshold v" << HIST_VERSION_STRING << endl;
         cout << "Usage: WSIThreshold.exe input output [options]" << endl;
       }
       if (vm.count("help")) {

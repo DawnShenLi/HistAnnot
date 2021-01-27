@@ -207,7 +207,7 @@ void ASAP_Window::on_actionAbout_triggered() {
   if (content) {
     QLabel* generalInfoLabel = content->findChild<QLabel*>("generalInfoLabel");
     QString generalInfoText = generalInfoLabel->text();
-    generalInfoText.replace("@VERSION_STRING@", ASAP_VERSION_STRING);
+    generalInfoText.replace("@VERSION_STRING@", HIST_VERSION_STRING);
     generalInfoLabel->setText(generalInfoText);
     QTreeWidget* pluginList = content->findChild<QTreeWidget*>("loadedPluginsOverviewTreeWidget");
     QList<QTreeWidgetItem*> root_items = pluginList->findItems("Tool", Qt::MatchExactly);

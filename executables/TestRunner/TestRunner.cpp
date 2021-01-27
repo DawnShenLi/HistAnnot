@@ -1,6 +1,6 @@
-#include "UnitTest++/UnitTest++.h"
-#include "UnitTest++/XmlTestReporter.h"
-#include "UnitTest++/TestReporterStdout.h"
+#include "UnitTest++.h"
+#include "XmlTestReporter.h"
+#include "TestReporterStdout.h"
 #include "TestData.h"
 #include <iostream>
 #include <fstream>
@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-  std::cout << "TestRunner v" << ASAP_VERSION_STRING << endl;
+  std::cout << "TestRunner v" << HIST_VERSION_STRING << endl;
   if (argc < 2)
   {
 	std::cout << "No data directory given, aborting" << endl;

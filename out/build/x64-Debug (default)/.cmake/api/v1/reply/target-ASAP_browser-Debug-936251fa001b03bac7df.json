@@ -1,0 +1,850 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "ASAP/worklist_interface/ASAP_browser_d.exe"
+		},
+		{
+			"path" : "ASAP/worklist_interface/ASAP_browser_d.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"ADD_EXECUTABLE",
+			"install",
+			"TARGET_LINK_LIBRARIES",
+			"target_compile_definitions"
+		],
+		"files" : 
+		[
+			"C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"ASAP/worklist_interface/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 102,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 103,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   /D\"_SCL_SECURE_NO_WARNINGS\" /D\"_CRT_SECURE_NO_WARNINGS\" /wd4251"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "BUILD_GRANDCHALLENGE_INTERFACE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "CPPREST_EXCLUDE_WEBSOCKETS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_CONCURRENT_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_UITOOLS_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/worklist_interface/ASAP_browser_autogen/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/ASAP"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/imgproc/basicfilters"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/core"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/multiresolutionimageinterface"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/boost_1_68_0"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtANGLE"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtCore"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/./mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtUiTools"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtConcurrent"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/src/vcpkg/installed/x64-windows/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				41
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG   /D\"_SCL_SECURE_NO_WARNINGS\" /D\"_CRT_SECURE_NO_WARNINGS\" /wd4251"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "BUILD_GRANDCHALLENGE_INTERFACE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "CPPREST_EXCLUDE_WEBSOCKETS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_CONCURRENT_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_UITOOLS_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP/worklist_interface/ASAP_browser_autogen/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/ASAP"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/ASAP"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/imgproc/basicfilters"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/core"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Projects/Pathology/code/HistAnnot/out/build/x64-Debug (default)/multiresolutionimageinterface"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/boost_1_68_0"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtANGLE"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtCore"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/./mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtUiTools"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Qt/5.11.2/msvc2017_64/include/QtConcurrent"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/src/vcpkg/installed/x64-windows/include"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "multiresolutionimageinterface::@43e30ab7b55c91f41080"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "core::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "basicfilters::@4a094295c42b5c0b4e06"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "ASAPLib::@a243750b205c685f07fd"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ASAP_browser_autogen::@550e97d4972fcf136386"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "ASAP"
+	},
+	"id" : "ASAP_browser::@550e97d4972fcf136386",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "D:/Projects/Pathology/code/HistAnnot/out/install/x64-Debug (default)"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\ASAPLib_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\..\\multiresolutionimageinterface\\multiresolutionimageinterface_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Qt\\5.11.2\\msvc2017_64\\lib\\Qt5OpenGLd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Qt\\5.11.2\\msvc2017_64\\lib\\Qt5UiToolsd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Qt\\5.11.2\\msvc2017_64\\lib\\Qt5Concurrentd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "C:\\boost_1_68_0\\lib64-msvc-14.1\\boost_filesystem-vc141-mt-gd-x64-1_68.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "C:\\src\\vcpkg\\installed\\x64-windows\\debug\\lib\\cpprest_2_10d.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\..\\imgproc\\basicfilters\\basicfilters_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "..\\..\\core\\core_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Qt\\5.11.2\\msvc2017_64\\lib\\Qt5Widgetsd.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "C:\\Qt\\5.11.2\\msvc2017_64\\lib\\Qt5Guid.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Qt\\5.11.2\\msvc2017_64\\lib\\Qt5Cored.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "C:\\boost_1_68_0\\lib64-msvc-14.1\\boost_system-vc141-mt-gd-x64-1_68.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "ASAP_browser",
+	"nameOnDisk" : "ASAP_browser_d.exe",
+	"paths" : 
+	{
+		"build" : "ASAP/worklist_interface",
+		"source" : "ASAP/worklist_interface"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				41
+			]
+		},
+		{
+			"name" : "Data",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"name" : "GUI",
+			"sourceIndexes" : 
+			[
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24
+			]
+		},
+		{
+			"name" : "Misc",
+			"sourceIndexes" : 
+			[
+				25,
+				26
+			]
+		},
+		{
+			"name" : "Models",
+			"sourceIndexes" : 
+			[
+				27,
+				28
+			]
+		},
+		{
+			"name" : "GrandChallenge",
+			"sourceIndexes" : 
+			[
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				42
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/worklist_interface/ASAP_browser_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/ASAP_browser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "ASAP/worklist_interface/ASAP_browser.rc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Data/DataTable.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Data/DataTable.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Data/DirectorySource.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Data/DirectorySource.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Data/FilelistSource.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Data/FilelistSource.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Data/SourceProxy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Data/SourceProxy.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Data/WorklistSourceInterface.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Data/WorklistSourceInterface.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/CompositeChild.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/GUI/CompositeChild.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/CompositeWindow.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/GUI/CompositeWindow.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/IconCreator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/GUI/IconCreator.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/WorklistWindow.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/GUI/WorklistWindow.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/ThumbnailCache.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/GUI/ThumbnailCache.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/CompositeWindowLayout.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/WorklistWindowLayout.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Misc/TemporaryDirectoryTracker.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Misc/TemporaryDirectoryTracker.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Models/WorklistModels.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Models/WorklistModels.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Data/GrandChallengeSource.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Data/GrandChallengeSource.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/GUI/ExternalSourceDialog.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/GUI/ExternalSourceDialog.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Networking/DjangoConnection.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Networking/DjangoConnection.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Networking/HTTPConnection.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Networking/HTTPConnection.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Networking/HTTPFileDownload.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Networking/HTTPFileDownload.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "ASAP/worklist_interface/Serialization/JSON.h",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "ASAP/worklist_interface/Serialization/JSON.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug (default)/ASAP/worklist_interface/qrc_WorklistInterface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"path" : "ASAP/worklist_interface/Resources/WorklistInterface.qrc",
+			"sourceGroupIndex" : 6
+		}
+	],
+	"type" : "EXECUTABLE"
+}

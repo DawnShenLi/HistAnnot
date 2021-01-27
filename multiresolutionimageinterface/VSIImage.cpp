@@ -8,6 +8,10 @@
 #include "core/Box.h"
 #include "core/PathologyEnums.h"
 
+// modified by L.Shen
+FILE _iob[] = { *stdin, *stdout, *stderr };
+extern "C" FILE * __cdecl __iob_func(void) { return _iob; }
+
 // Include DCMTK LIBJPEG for lossy and lossless JPEG compression
 extern "C" {
 #define boolean ijg_boolean

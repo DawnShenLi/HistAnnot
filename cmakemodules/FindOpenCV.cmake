@@ -19,7 +19,8 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(OpenCV
                                   REQUIRED_VARS OpenCV_LIBRARY OpenCV_INCLUDE_DIR)
 
 if(OpenCV_FOUND)
-  set(OpenCV_LIBRARIES ${OPENSLIDE_LIBRARY} )
+  set(OpenCV_LIBRARIES ${OpenCV_LIBRARY} )
+  set(OpenCV_INCLUDE_DIRS ${OpenCV_INCLUDE_DIR} ${OpenCV_INCLUDE_DIR}/../)
 endif()
 
 mark_as_advanced(OpenCV_INCLUDE_DIR OpenCV_LIBRARY)
